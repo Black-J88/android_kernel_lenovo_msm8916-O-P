@@ -1457,3 +1457,8 @@ FORCE:
 # Declare the contents of the .PHONY variable as phony.  We keep that
 # information in a variable so we can use it in if_changed and friends.
 .PHONY: $(PHONY)
+
+# FIXME TODO
+KBUILD_CFLAGS   += $(call cc-disable-warning, format-truncation)
+KBUILD_CFLAGS   += $(call cc-disable-warning, format-overflow)
+KBUILD_CFLAGS   += $(call cc-disable-warning, int-in-bool-context)
