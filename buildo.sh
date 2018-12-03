@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "Cleaning previous out directory before building"
-rm -rf out
 echo "Creating new out directory"
 mkdir out
 echo "Writing configurations"
